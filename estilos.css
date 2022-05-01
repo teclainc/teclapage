@@ -8,23 +8,23 @@ body{
     background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
 }
 
-@media only screen and (min-width:414px){
+@media only screen and (min-width: 425px) and (max-width: 768px){
     #grilla{
         display: grid;
         grid-template-areas: 
-        "header"
-        "nav1"
-        "article"
-        "footer";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr;
+        "header header"
+        "nav1 nav1"
+        "article article"
+        "footer footer";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-row-gap: 30px;
         grid-column-gap: 10px;
     }
     
-    .border{
+    /* .border{
         border: 1px solid black;
-    }
+    } */
     
     header{
         grid-area: header;
@@ -41,28 +41,31 @@ body{
     footer{
         grid-area: footer;
     }
-
+    
     .logo{
-        width: 414px;
-        padding: 20px;
+        width: 90%;
+        margin: 5%;
+        /* padding: 20px; */
+
     }
     
     nav{
-        width: 414px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
+        /* word-spacing: 20px; */
     }
     
-    nav ul li :hover{
+    /* nav ul li :hover{
         opacity: 50%;
-    }
+    } */
     
     nav ul li{
         display: inline-block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
     }
     
     nav ul li a{
@@ -79,28 +82,28 @@ body{
     #imagenprincipal{
         display: block;
         width: 100%;
-        opacity: 70%;
+        /* opacity: 70%; */
         border-radius: 5px;
     }
     
     
     #descripcion{
+        padding: 15px;
         z-index: 1;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 14px;
+        font-size: 18px;
         text-transform: uppercase;
-        color: white;
+        color: black;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px;
         /* border: 1px solid red; */
     }
     
     footer{
-        height: 200px;
-        width: 90%;
+        margin: 30px;
+        height: 100px;
         background-color: white;
         padding: 25px;
         border-radius: 10px;
@@ -109,8 +112,7 @@ body{
     #footer1{
         display: grid;
         grid-template-areas: 
-        "contenido" 
-        "links";
+        "contenido links";
     }
     
     #footerc{
@@ -119,16 +121,15 @@ body{
     
     #footerlinks{
         grid-area: links;
-        padding: 20px;
     }
-
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     #grilla{
         display: grid;
         grid-template-areas: 
-        "header nav1"
+        "header header"
+        "nav1 nav1"
         "article article"
         "footer footer";
         grid-template-rows: auto auto auto;
@@ -137,9 +138,9 @@ body{
         grid-column-gap: 10px;
     }
     
-    .border{
+    /* .border{
         border: 1px solid black;
-    }
+    } */
     
     header{
         grid-area: header;
@@ -156,10 +157,10 @@ body{
     footer{
         grid-area: footer;
     }
-
+    
     .logo{
-        width: 70%;
-        padding: 20px;
+        width: 90%;
+        /* padding: 20px; */
     }
     
     nav{
@@ -167,16 +168,18 @@ body{
         text-transform: uppercase;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
+        word-spacing: 10px;
     }
     
-    nav ul li :hover{
+    /* nav ul li :hover{
         opacity: 50%;
-    }
+    } */
     
     nav ul li{
         display: inline-block;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
     }
     
     nav ul li a{
@@ -246,7 +249,7 @@ body{
     }
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width: 1024px){
 
     #grilla{
         display: grid;
@@ -260,9 +263,9 @@ body{
         grid-column-gap: 10px;
     }
     
-    .border{
+    /* .border{
         border: 1px solid black;
-    }
+    } */
     
     header{
         grid-area: header;
@@ -279,7 +282,7 @@ body{
     footer{
         grid-area: footer;
     }
-
+    
     .logo{
         width: 50%;
         padding: 20px;
@@ -294,8 +297,10 @@ body{
         word-spacing: 20px;
     }
     
-    nav ul li :hover{
+    .menuLista :hover{
         opacity: 50%;
+        transform: scale(1.2);
+        transition: 0.7s;
     }
     
     nav ul li{
@@ -368,5 +373,4 @@ body{
     #footerlinks{
         grid-area: links;
     }
-    
 }
