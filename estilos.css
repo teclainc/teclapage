@@ -374,3 +374,32 @@ body{
         grid-area: links;
     }
 }
+
+/* estilos de contacto */
+
+.formulario{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    margin: 30px;
+    height: 100px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#footer1{
+    display: grid;
+    grid-template-areas: 
+    "contenido links";
+}
+
+#footerc{
+    grid-area: contenido;
+}
+
+#footerlinks{
+    grid-area: links;
+}

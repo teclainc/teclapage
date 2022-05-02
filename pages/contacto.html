@@ -9,75 +9,82 @@
 </head>
 <body>
 
-    <header>
-        <h1>
+    <div id="grilla">
+        <header class="border">
+            <h1 class="logoinicio">
             <a href="../index.html">
-            <img src="../LOGO.png" alt="Logo de Tecla">
+            <img src="../LOGO.png" alt="Logo de Tecla" class="logo">
             </a>
-        </h1>
-
-        <h2>CONTACTO</h2>
+            </h1>
+        </header>
     
-        <nav>
+        <nav class="border" id="nav1">
             <ul>
-                <a href="../index.html">INICIO</a>
-                <a href="../pages/tracks.html">TRACKS</a>
-                <a href="../pages/beats.html">BEATS</a>
-                <a href="../pages/librerias.html">LIBRERIAS</a>
-                <a href="../pages/contacto.html">CONTACTO</a>
+                <li class="menuLista"><a href="./index.html">INICIO</a></li>
+                <li class="menuLista"><a href="../pages/tracks.html">TRACKS</a></li>
+                <li class="menuLista"><a href="../pages/beats.html">BEATS</a></li>
+                <li class="menuLista"><a href="../pages/librerias.html">LIBRERIAS</a></li>
+                <li class="menuLista"><a href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+
+<div class="fomulario">
         <h2>Formulario de Contacto</h2>
-<fieldset>
-    <form>
-    <div>
-    <label for="nombre-usuario">Nombre</label>
-    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre">
+    <fieldset>
+        <form>
+        <div>
+        <label for="nombre-usuario">Nombre</label>
+        <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre">
+        </div>
+
+        <div>
+        <label for="apellido-usuario">Apellido</label>
+        <input type="text" name="apellido-usuario" id="apellido-usuario" placeholder="Apellido">
+        </div>
+
+        <div>
+        <label for="email-usuario">Email</label>
+        <input type="email" name="email-usuario" id="" placeholder="correo@email.com">
+        </div>
+
+        <div>
+        <label for="mensaje-usuario">Mensaje</label>
+        <textarea name="mensaje-usuario" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" name="submit">
+        <input type="reset">
+        </form>
+    </fieldset>
 </div>
 
-    <div>
-    <label for="apellido-usuario">Apellido</label>
-    <input type="text" name="apellido-usuario" id="apellido-usuario" placeholder="Apellido">
-    </div>
+<footer class="border">
+    <!-- redes sociales -->
 
-    <div>
-    <label for="email-usuario">Email</label>
-    <input type="email" name="email-usuario" id="" placeholder="correo@email.com">
-    </div>
+<div id="footer1">
+<section id="footerc">
+    <h2>
+        Sígueme!
+    </h2>
+    <p>
+        Sígueme en tu red social favorita para que estés al tanto de todo lo nuevo.
+    </p>
+</section>
 
-    <div>
-    <label for="mensaje-usuario">Mensaje</label>
-    <textarea name="mensaje-usuario" id="" cols="30" rows="10"></textarea>
-    </div>
+<section id="footerlinks">
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/tecla.als/" target="_blank">Instagram</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/73cl4" target="_blank">Facebook</a>
+        </li>
+    </ul>
+</section>
+</div>
 
-    <input type="submit" name="" id="">
-    <input type="reset">
-    </form>
-</fieldset>
+</footer>
 
-
-    </main>
-
-    <hr>
-    <footer>
-        <!-- redes sociales -->
-        <h2>
-            Sígueme!
-        </h2>
-        <p>
-            Sígueme en tu red social favorita para que estés al tanto de todo lo nuevo.
-        </p>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/tecla.als/" target="_blank">Instagram</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/73cl4" target="_blank">Facebook</a>
-            </li>
-        </ul>
-    </footer>
 </body>
 </html>
